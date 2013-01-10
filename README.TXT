@@ -6,3 +6,5 @@ Everything should be working properly. This is the final round of improvements o
 In the Input and Output directories, there are input and output files you can use to test my shell.
 Shell.1 through Shell.6 are files that Dr. Duncan provided last quarter for testing. My corresponding output is shell1.out through shell6.out (and shell6.err).
 redirect.in is a file I made to show that redirection works. This creates three files: fileA, f00, and fooTest. You can have these printed in the shell by running the catTest.in file, and catTest.out is the corresponding output file.
+
+There is a make file located in the main directory. The folder "ProgramTechShell" is starter code.
