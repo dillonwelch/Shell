@@ -1,0 +1,9 @@
+Hello
+Bye Bye
+Hello
+cmd: list
+tok: Bye Bye
+word: Hello
+This should print out via echo
+Hello Hi Bye Bye $word$
+Hello and Bye Bye

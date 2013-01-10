@@ -1,0 +1,21 @@
+#! ./techShell
+
+# This shell script tests variable substitution 
+# in a simple form
+
+set word Hello
+set tok "Bye Bye"
+echo $word$
+echo $tok$
+echo "$word$"
+
+set cmd list
+$cmd$  # Should run the list command
+
+set cmd echo
+$cmd$ "This should print out via echo"
+
+$cmd$ $word$ "Hi $tok$" '$word$'  # Single quotes are NOT expanded.
+
+set word "$word$ and $tok$"
+echo $word$

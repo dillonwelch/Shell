@@ -1,0 +1,25 @@
+Here we go
+This is the first
+set of commands
+Even this one should work.
+HI THERE.  NO NEED TO SHOUT.
+#! ./TECHSHELL
+# THIS SHELL SCRIPT TESTS SOME BASIC COMMAND SEQUENCE EXECUTIONS
+# INCLUDING MULTIPLE STATEMENTS AND PIPING
+;  # SHOULD HANDLE A BLANK STATEMENT
+# WHAT ABOUT PIPING!
+CAT INPUT/SHELL.4 | GREP '#' | TR [A-Z!] [A-Z!]   # NOTE '#' IS NOT THE START OF A COMMENT.
+# WHAT ABOUT THIS ONE...
+# AND PIPING BUILTIN OUTPUTS!!!
+LIST | TR [A-Z] [A-Z] | TR [A-Z] [B-ZA] | GREP SPEAK | SORT | CUT -D: -F2  # SHOUT (AND UNSCRAMBLED)
+# OK, IF YOU GOT THE OTHER ONES, WE CAN STOP
+WHAT ABOUT this one...  ...eno siht TUOBA TAHW
+==========
+Final Part
+==========
+What does the next line print out for you?
+ SHHH!!!
+ PLEASE, NO SHOUTING.
+ EXCELLENT.  YOU GOT IT!
+Hopefully that made sense.
+Ok, if you got the other ones, we can stop

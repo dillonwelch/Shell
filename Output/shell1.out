@@ -1,0 +1,13 @@
+Hi there
+1 2 3
+4 5 6
+#! ./techShell
+
+# This is just a simple script to see if comments are ignored and
+# if basic commands are executed
+echo "Hi there"
+echo "1 2 3" # Not me...
+echo "4 5 6" # And here...
+cat shell.1  # Echo myself!
+
+# Ok, next shell is more complex... hopefully.

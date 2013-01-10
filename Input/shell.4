@@ -1,0 +1,34 @@
+#! ./techShell
+
+# This shell script tests some basic command sequence executions
+# Including multiple statements and piping
+
+echo "Here we go" ; echo "This is the first" ; echo "set of commands" ;
+;  # Should handle a blank statement
+echo -n "Even " ; ; ; echo -n "this one " ; echo "should work."
+
+# What about piping?
+echo "Hi there.  No need to shout." | tr [a-z] [A-Z]
+cat Input/shell.4 | grep '#' | tr [a-z?] [A-Z!]   # Note '#' is NOT the start of a comment.
+
+# What about this one...
+echo -n "What about " | tr [a-z] [A-Z] | tee temp.txt ; echo -n "this one... " | tee -a temp.txt
+rev temp.txt
+rm temp.txt
+
+# And piping builtin outputs???
+echo "=========="
+echo "Final Part"
+echo "=========="
+set cmd yes
+set rodzjZ rggg!!!
+set rodzjA "Okdzrd, mn rgntshmf."
+set rodzjB "Dwbdkkdms.  Xnt fns hs!"
+set final "Not printed."
+
+echo "What does the next line print out for you?"
+list | tr [a-z] [A-Z] | tr [A-Z] [B-ZA] | grep SPEAK | sort | cut -d: -f2  # Shout (and unscrambled)
+echo "Hopefully that made sense."
+
+# Ok, if you got the other ones, we can stop
+echo "bafe zmo qi ,eqza dqtfa qtf fas gak ru ,wA" | tr [m-za-lM-ZA-L] [a-zA-Z] | rev

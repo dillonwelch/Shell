@@ -1,0 +1,42 @@
+==========
+Part One
+==========
+First changing directories...
+1	    command.c  Output/		  shell.3*    techShell*   tokenizer.o
+2	    command.d  ProgramTechShell/  shell3.out  techShell.c  varSet.c
+A	    command.h  Project1.pdf	  shell.4*    techShell.d  varSet.d
+Backup/     command.o  README.TXT	  shell4.out  techShell.o  varSet.h
+builtins.c  global.h   shell.1*		  shell.5*    temp.txt	   varSet.o
+builtins.d  Input/     shell1.out	  shell5.out  tokenizer.c
+builtins.h  Location   shell.2*		  shell.6*    tokenizer.d
+builtins.o  Makefile   shell2.out	  shell6.out  tokenizer.h
+Current directory: Project 1/
+Current directory: Current directory: Current directory: Current directory: ==========
+Part Two
+==========
+Now, what about exit status?
+Is exit status 0?  I hope so.
+Executing garbageCommand...
+~/Dropbox/Documents/Documents/2010-2011 School Year Documents/Spring 2011/Csc 345/Project 1
+~/Dropbox/Documents/Documents/2010-2011 School Year Documents/Spring 2011/Csc 345
+/
+/home
+~
+This one should be quiet again.
+As is this one... but now turning status back on.
+And noisy again.
+~/Dropbox/Documents/Documents/2010-2011 School Year Documents/Spring 2011/Csc 345/Project 1
+~/Dropbox/Documents/Documents/2010-2011 School Year Documents/Spring 2011/Csc 345
+/
+/home
+~
+... and again.
+==========
+Part Three
+==========
+Let us try one last built-in function...
+~/Dropbox/Documents/Documents/2010-2011 School Year Documents/Spring 2011/Csc 345/Project 1
+~/Dropbox/Documents/Documents/2010-2011 School Year Documents/Spring 2011/Csc 345
+/
+/home
+~

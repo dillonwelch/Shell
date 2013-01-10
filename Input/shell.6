@@ -1,0 +1,45 @@
+#! ./techShell
+
+# Ok, now let us check a few of the other built-ins
+
+echo "=========="
+echo "Part One"
+echo "=========="
+echo "First changing directories..."
+
+ls -FC ; echo -n "Current directory: " ; pwd
+cd ..   # Should move up one directory level
+ls -FC ; echo -n "Current directory: " ; pwd
+cd /    # Should move to the root of the system
+echo -n "Current directory: " ; pwd
+cd home # Should move to /home (relative movement)
+echo -n "Current directory: " ; pwd
+cd      # Should move to the USER'S HOME Environment variable (getEnv)!!!
+echo -n "Current directory: " ; pwd
+
+echo "=========="
+echo "Part Two"
+echo "=========="
+echo "Now, what about exit status?"
+status ON
+echo "Is exit status 0?  I hope so."
+echo "Executing garbageCommand..."
+echo "And this one... should NOT be." | garbageCommand
+status OFF
+echo "This one should be quiet again."
+echo "As is this one... but now turning status back on."
+status     # Should toggle it - and hence be back on. (And reports exit status!)
+echo "And noisy again." ; echo "With exit status..." | garbage ; echo "... and again."
+echo "The false command is useful" | false
+echo "The true command is also useful" | true
+status     # Toggle back off.
+
+echo "=========="
+echo "Part Three"
+echo "=========="
+echo "Let us try one last built-in function..."
+
+exit
+
+# These lines should never be reached.
+echo "What.  Why is this being printed!!!"

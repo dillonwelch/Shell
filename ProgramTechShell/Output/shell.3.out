@@ -1,0 +1,34 @@
+========
+Part One
+========
+twoWord: Hello $word$
+oneWord: Hello Good-bye
+word: Good-bye
+Hello Good-bye
+Hello Good-bye
+========
+Part Two
+========
+Hello Good-bye
+Hello there
+========
+Part Three
+========
+Hello Good Bye Bye
+========
+Part Four
+========
+recC: $recB$C$recC$
+recB: B$recA$B
+recA: A$recB$
+rec: X$rec$
+bye: Bye Bye
+twoWord: Hello $word$
+oneWord: Hello Good-bye
+word: Good $bye$
+========
+Part Five
+========
+XXXXXXXXXX$rec$
+BABABABAB$recA$BBBBBCBABABABA$recB$BBBBCBABABAB$recA$BBBBCBABABA$recB$BBBCBABAB$recA$BBBCBABA$recB$BBCBAB$recA$BBCBA$recB$BCB$recA$BC$recB$C$recC$
+Did it crash?  Or make it this far.

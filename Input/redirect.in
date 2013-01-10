@@ -1,0 +1,8 @@
+#! ./techShell
+
+# This shows that redirection works.
+
+echo "Hi there" > fileA
+cat < fileA | grep 'H' | tr [a-z] [A-Z] > f00
+set OUTPUT fooTest
+echo Hello > $OUTPUT$

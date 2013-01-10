@@ -1,0 +1,7 @@
+#! ./techShell
+
+# This shows the contents of the three files made via redirect.in
+
+cat fileA
+cat f00
+cat fooTest

@@ -1,0 +1,48 @@
+#! ./techShell
+
+# This shell script tests variable substitution 
+# at a more recursive level.
+# Remember substitutions are done repeatedly (but only on the same token).
+# So, "Hi $word$ there" would expand to the token "Hi ... there" (depending on what word is)
+
+echo "========"
+echo "Part One"
+echo "========"
+set word Good-bye
+set oneWord "Hello $word$"   # Should be expanded BEFORE assignment
+set twoWord 'Hello $word$'   # Should not be expanded until used!
+list                         # See my output for a comparison
+echo $oneWord$
+echo $twoWord$
+
+echo "========"
+echo "Part Two"
+echo "========"
+set word "there"             # Changed the word... 
+echo $oneWord$               # Did this one change? (it should not have)
+echo $twoWord$               # Did this one change? (it should have)
+
+echo "========"
+echo "Part Three"
+echo "========"
+set bye "Bye Bye"            # Now another level
+set word 'Good $bye$'
+echo $twoWord$               # Does this say "Hello Good Bye Bye"?
+
+# Now the recursion... (Should stop after 10 levels - and if line length exceeds 500)
+echo "========"
+echo "Part Four"
+echo "========"
+set rec  'X$rec$'
+set recA 'A$recB$'
+set recB 'B$recA$B'
+set recC '$recB$C$recC$'
+list
+
+# Ok... here goes
+echo "========"
+echo "Part Five"
+echo "========"
+echo $rec$
+echo $recC$
+echo "Did it crash?  Or make it this far."

@@ -1,0 +1,34 @@
+==========
+Part One
+==========
+First changing directories...
+argList.h   command.c	global.h    techShell.c  tokenizer.d  varSet.h
+builtins.c  command.c~	Input/	    techShell.d  tokenizer.h  varSet.o
+builtins.d  command.d	Makefile    techShell.o  tokenizer.o
+builtins.h  command.h	Output/     temp.txt	 varSet.c
+builtins.o  command.o	techShell*  tokenizer.c  varSet.d
+Current directory: /home/duncan/Courses/Winter0910/CSC222/Homework/Solutions/ProgramTechShell
+exercise1-SOLUTIONS.pdf  Program3SolutionsOld.zip  ProgramBasicC/
+Program1/		 Program4@		   ProgramBigShell.zip
+Program1Solutions.zip	 Program4Old/		   ProgramE1/
+Program2Solutions.zip	 Program4Solutions.zip	   ProgramMoreBasicC/
+Program3@		 Program5/		   ProgramTechShell/
+Program3Old/		 Program5.zip
+Current directory: /home/duncan/Courses/Winter0910/CSC222/Homework/Solutions
+Current directory: /
+Current directory: /home
+Current directory: /home/duncan
+==========
+Part Two
+==========
+Now, what about exit status?
+Is exit status 0?  I hope so.
+Executing garbageCommand...
+This one should be quiet again.
+As is this one... but now turning status back on.
+And noisy again.
+... and again.
+==========
+Part Three
+==========
+Let us try one last built-in function...

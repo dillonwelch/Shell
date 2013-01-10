@@ -1,0 +1,14 @@
+#! ./techShell
+
+# Now combine the two steps into one 
+# Just to see them work together
+
+set cmdA echo
+set cmdB tr
+set argA "A-Z"
+set argB "QWERTYUIOPASDFGHJKLZXCVBNM"
+
+$cmdA$ "OK.  LET US DO THIS AND REVERSE IT." | $cmdB$ $argA$ $argB$ | tee temp.txt
+cat temp.txt | $cmdB$ $argB$ $argA$ | rev
+cat temp.txt | $cmdB$ $argB$ $argA$ | rev | rev
+echo "Did the message show up?"
